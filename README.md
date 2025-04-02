@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# FILMAPPLI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+FILMAPPLI est une application web permettant aux utilisateurs de consulter une base de données de films, d'ajouter des films à leurs favoris, et de laisser des avis. L'application offre une interface simple et intuitive pour parcourir, rechercher, et noter des films.
 
-## Available Scripts
+## 📌 Description
+L'application permet aux utilisateurs de s'inscrire, de se connecter et de gérer leur propre liste de films favoris. Elle inclut également une section dédiée aux critiques et aux évaluations laissées par les utilisateurs.
 
-In the project directory, you can run:
+## 🚀 Fonctionnalités principales
+- **Inscription et connexion des utilisateurs**.
+- **Recherche de films** : Recherche par titre, genre, ou année.
+- **Ajout de films aux favoris**.
+- **Évaluation et critique des films**.
+- **Affichage des détails d'un film** : Synopsis, genre, date de sortie, etc.
+- **Gestion des utilisateurs** : Modification du profil et des favoris.
 
-### `npm start`
+## 📂 Structure du projet
+```
+.
+├── index.php            # Page d'accueil
+├── register.php         # Inscription des utilisateurs
+├── login.php            # Connexion des utilisateurs
+├── movies.php           # Liste des films disponibles
+├── movie_detail.php     # Affichage des détails d'un film
+├── favorites.php        # Liste des favoris d'un utilisateur
+├── assets/              # Fichiers CSS et JavaScript
+├── includes/            # Fichiers PHP inclus (header, footer, etc.)
+├── README.md            # Documentation du projet
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔧 Prérequis
+- PHP >= 8.0
+- Serveur web (Apache, Nginx, etc.)
+- Base de données MySQL ou MariaDB
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📥 Installation
+1. Clonez ce dépôt :
+```bash
+$ git clone https://github.com/Lcs-93/FILMAPPLI.git
+```
+2. Rendez-vous dans le répertoire cloné :
+```bash
+$ cd FILMAPPLI
+```
+3. Placez les fichiers sur votre serveur web local ou distant.
+4. Configurez la base de données dans le fichier `config.php` :
+```php
+$host = '127.0.0.1';
+$dbname = 'filmapp';
+$username = 'root';
+$password = '';
+```
+5. Importez le fichier SQL fourni pour créer les tables nécessaires.
+6. Accédez à l'application via votre navigateur (par exemple : `http://localhost/FILMAPPLI`).
 
-### `npm test`
+## 📌 Utilisation
+- Inscrivez-vous ou connectez-vous pour accéder aux fonctionnalités personnalisées.
+- Recherchez des films par titre, genre, ou année.
+- Ajoutez des films à vos favoris et laissez des critiques.
+- Consultez vos films favoris depuis votre profil.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technologies utilisées
+- **PHP** : Langage principal pour le backend.
+- **HTML / CSS / JavaScript** : Pour le frontend.
+- **MySQL / MariaDB** : Base de données relationnelle.
 
-### `npm run build`
+## 📄 Licence
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📣 Auteur
+Projet créé par **Lcs-93**. N'hésitez pas à me contacter pour toute suggestion ou amélioration !
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🔥 Bon développement !
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
